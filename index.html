@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div id="songs"></div>
+    <div id="reproductor">
+        <div id="song-info-container">
+            <img src="https://lh3.googleusercontent.com/d_T3L3Ed5ynZLMVs0Ely4aqTfBZ-y9P9azzlLuKvT2re1QQuxqTxRPoSv082zBOBWmXZZRZKqIFbR7YI=w544-h544-l90-rj" alt="" id="song-cover">
+            <div id="song-info">
+                <p id="song-name">Style</p>
+                <p id="song-artist">Taylor Swift</p>
+            </div>
+            <div id="like">
+                <i id="like-icon" class="fa-solid fa-crown"></i>
+            </div>
+        </div>
+        <div id="music-player">
+            <div id="audio-controllers">
+                <div><i id="shuffle-icon" class="fa-solid fa-shuffle"><div></div></i></div>
+                <div><i class="fa-solid fa-backward"></i></div>
+                <div id="play-button"><i id="play-icon" class="fa-solid fa-play"></i></div>
+                <div><i class="fa-solid fa-forward"></i></div>
+                <div><i class="fa-solid fa-repeat"></i></div>
+            </div>
+            <div id="audio-slider">
+                <div class="time" id="song-time">3:22</div>
+                <input type="range" id="song-slider" class="input-range" min="0" max="100" value="0">
+                <div class="time" id="song-duration">5:15</div>
+            </div>
+        </div>
+        <div id="song-control-container">
+            <i class="fa-solid fa-receipt"></i>
+            <i id="volume-icon" class="fa-solid fa-volume-low"></i>
+            <input id="volume-input" type="range" class="input-range" min="0" max="1" step="0.01"value="0.5">
+        </div>
+    </div>
+    <script src="./main.js"></script>
+    <script src="https://kit.fontawesome.com/73239f458e.js" crossorigin="anonymous"></script>
+</body>
+</html>
